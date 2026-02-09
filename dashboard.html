@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Dashboard</title>
+  <meta charset="UTF-8">
+</head>
+
+<body style="font-family:Arial;background:#020617;color:white;padding:40px;">
+
+<h1>👋 Welcome to Your AI Dashboard</h1>
+<p>Select what you want AI to help you build:</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px;">
+
+<div style="border:1px solid #38bdf8;padding:20px;border-radius:10px;">
+<h3>📞 AI Appointment Setter</h3>
+<p>Automate calls & booking.</p>
+<button onclick="selectAI('Appointment Setter')">Select</button>
+</div>
+
+<div style="border:1px solid #38bdf8;padding:20px;border-radius:10px;">
+<h3>🎬 AI Content Repurposing</h3>
+<p>Turn videos into clips.</p>
+<button onclick="selectAI('Content Repurposing')">Select</button>
+</div>
+
+<div style="border:1px solid #38bdf8;padding:20px;border-radius:10px;">
+<h3>💬 AI Sales Chatbot</h3>
+<p>Turn chats into sales.</p>
+<button onclick="selectAI('Sales Chatbot')">Select</button>
+</div>
+
+<div style="border:1 solid #38bdf8;padding:20px;border-radius:10px;">
+<h3>📧 AI Inbox Manager</h3>
+<p>Manage emails & calendar.</p>
+<button onclick="selectAI('Inbox Manager')">Select</button>
+</div>
+
+</div>
+
+<p id="result" style="margin-top:40px;font-size:18px;"></p>
+
+<script>
+function selectAI(choice){
+  document.getElementById("result").innerHTML =
+  "✅ You selected: <strong>" + choice + "</strong><br><br>AI setup will be generated for you.";
+}
+</script>
+
+</body>
+</html>
